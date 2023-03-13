@@ -1,0 +1,50 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  text-align: center;
+  color: #FFFFFF;
+  background: #F43930;
+  border: none;
+  box-shadow: none;
+  border-radius: 8px;
+  
+  @include lg {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (max-width: 1439px) {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  @include link();
+
+  &--small {
+    min-width: 188px;
+    min-height: 38px;
+    padding: 4px 12px;
+  }
+
+  &:not(.button--small) {
+
+    @include lg {
+      min-width: 298px;
+      min-height: 56px;
+    }
+
+    @media (max-width: 1439px) {
+      min-width: 223px;
+      min-height: 35px;
+    }
+  }
+
+  &._disabled {
+    cursor: default;
+    user-select: none;
+    pointer-events: none;
+    opacity: .8;
+  }
+}

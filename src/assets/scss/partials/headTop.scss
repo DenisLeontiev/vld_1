@@ -1,0 +1,168 @@
+.headTop {
+  position: relative;
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  &__image {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right bottom;
+  }
+
+  &__content {
+    width: 100%;
+    margin: 110px 0 36px 0;
+    color: #D0D0D0;
+    
+    @include lg {
+      max-width: 546px;
+    }
+
+    @include md {
+      max-width: 364px;
+    }
+
+    @include sm {
+      max-width: 316px;
+    }
+
+    &--w {
+      justify-self: flex-end;
+      
+      @include lg {
+        margin: 110px 0 220px 0;
+      }
+
+      @include md {
+        margin: 180px 0;
+      }
+    }
+
+    div {
+      max-width: 380px;
+      width: 100%;
+    }
+
+    hr {
+      width: 188px;
+      margin: 28px 0;
+      border-color: #F43930;
+    }
+
+    .button {
+      margin-top: 56px;
+    }
+  }
+
+
+  &__stats {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 auto;
+    background: rgba(45, 45, 45, 0.62);
+    
+    @include lg {
+      gap: 0 72px;
+      padding: 28px 34px;
+    }
+
+    @include md {
+      gap: 0 18px;
+      padding: 18px 22px;
+    }
+
+    @include sm {
+      gap: 0 8px;
+      padding: 16px 20px;
+      margin: 0;
+      justify-content: center;
+      width: 100vw;
+      margin-left: -16px;
+    }
+
+    &Item {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      max-width: 146px;
+      width: 100%;
+      color: #D0D0D0;
+      
+      @media (min-width: 768px) {
+        flex-shrink: 0;
+      }
+      
+      @include md {
+        gap: 12px;
+        font-size: 12px;
+        line-height: 15px;
+        padding: 0 14px;
+      }
+
+      @include sm {
+        gap: 8px;
+        font-size: 10px;
+        line-height: 12px;
+        padding: 0 14px;
+      }
+
+      b {
+        font-weight: 400;
+        color: #FFFFFF;
+        
+        @include lg {
+          font-size: 42px;
+          line-height: 51px;
+        }
+
+        @media (max-width: 1439px) {
+          font-size: 28px;
+          line-height: 34px;
+        }
+      }
+
+      &:not(:last-child) {
+
+        &::after {
+          content: '';
+          position: absolute;
+          width: 1px;
+          background-color: #fff;
+          top: 50%;
+          
+          @include lg {
+            height: 110px;
+            right: -36px;
+          }
+
+          @include md {
+            height: 72px;
+            right: 0;
+          }
+
+          @include sm {
+            height: 66px;
+            right: -4px;
+          }
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+}

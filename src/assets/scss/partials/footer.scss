@@ -1,0 +1,141 @@
+.footer {
+  margin: 64px 0 0 0;
+  padding: 50px 0 28px 0;
+  background: #111111;
+  color: rgba(255, 255, 255, 0.7);
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    gap: 36px;
+  
+    @media (max-width: 1439px) {
+      display: none;
+    }
+  }
+
+  &__item {
+    @include lg {
+      max-width: 210px;
+    }
+    
+    @media (max-width: 1439px) {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      margin-bottom: 18px;
+
+      &.hide {
+  
+        .accord__body {
+          margin: 0;
+        }
+  
+        svg {
+          transform: scaleY(-1);
+        }
+      }
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin: 0 0 10px 0;
+  }
+
+  &__rated {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    
+    @include lg {
+      margin: 36px 0 0 0;
+    }
+
+    @media (max-width: 1439px) {
+      margin: 32px 0 0 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    svg {
+      margin: 6px 0 0 0;
+    }
+  }
+
+  p {
+    margin: 0;
+    padding: 0 0 24px 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    @media (max-width: 1439px) {
+      margin-bottom: 12px;
+    }
+  }
+
+  a {
+    color: rgba(255, 255, 255, 0.7);
+
+    @include link();
+  }
+
+  &__under {
+    display: flex;
+    align-items: center;
+    margin: 48px 0 0 0;
+    padding: 18px 0 0 0;
+    border-top: 1px solid rgba(251, 251, 251, 0.1);
+    
+    @media (min-width: 768px) {
+      gap: 0 64px;
+    }
+
+    @include sm {
+      gap: 0 15px;
+      font-size: 10px;
+      line-height: 12px;
+    }
+  }
+
+  .copyright {
+    margin-left: auto;
+  }
+
+  &__m {
+    @include lg {
+      display: none;
+    }
+
+    max-width: 596px;
+    margin: 0 auto;
+
+    &Title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0 26px;
+      padding-bottom: 10px;
+
+      svg {
+        transition: 200ms ease-in-out;
+      }
+    }
+
+    &Body {
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.2s ease-out;
+    }
+  }
+}

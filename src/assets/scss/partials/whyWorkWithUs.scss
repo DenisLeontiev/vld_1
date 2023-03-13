@@ -1,0 +1,46 @@
+.whyWorkWithUs {
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  &__item {
+    
+    @include lg {
+      width: calc(100% / 3 - 20px);
+    }
+
+    @include md {
+      width: calc(50% - 15px);
+    }
+
+    @include sm {
+      width: 100%;
+    }
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+    padding: 36px;
+
+    @include sm {
+      padding: 30px;
+    }
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 0 0 14px 0;
+    font-size: 24px;
+    line-height: 26px;
+    color: #111111;
+
+    svg {
+      width: 56px;
+      height: 56px;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.accord {
+  max-width: 818px;
+  margin: 0 auto;
+
+  &__item {
+    border-bottom: 1px solid rgba(17, 17, 17, 0.15);
+    padding-bottom: 27px;
+    margin-bottom: 27px;
+
+    svg {
+      transition: 200ms ease-in-out;
+    }
+
+    &.hide {
+
+      .accord__body {
+        margin: 0;
+      }
+
+      svg {
+        transform: scaleY(-1);
+      }
+    }
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #111111;
+    gap: 0 24px;
+
+    @include sm {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    span {
+      display: inline-block;
+      max-width: 516px;
+    }
+
+    @include link();
+  }
+
+  &__body {
+    margin: 18px 0 0 0;
+    max-width: 676px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s ease-out;
+  }
+}

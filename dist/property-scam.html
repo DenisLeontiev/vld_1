@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!-- Useful meta tags -->
+    <meta lang="ru-RU">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <!--styles-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/style.min.css">
+    
+    <title>TTT</title>
+    
+    <script>
+    const meta = document.head.querySelector('meta[name="viewport"]');
+    meta.setAttribute('content', `width=${zoomer()}, user-scalable=no`);
+    
+    function zoomer() {
+      const width = window.innerWidth;
+    
+      if (width >= 768 && width < 1439) return 768;
+    
+      if (width >= 1440) {
+        return 1440;
+      }
+    
+      return 375;
+    }
+    </script>  </head>
+  <body>
+    
+    <header class="header header--transparent">
+      <div class="container">
+          <a href="/" class="header__logo">
+              <svg viewBox="0 0 151 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.58002 10.2852H41.0519C41.428 10.5728 41.9023 10.7433 42.4162 10.7433C43.6398 10.7433 44.6323 9.77345 44.6323 8.57427C44.6323 7.37639 43.6398 6.40463 42.4162 6.40463C41.9023 6.40463 41.428 6.57576 41.0519 6.86463H3.58002C3.20358 6.57576 2.73095 6.40463 2.21636 6.40463C0.992502 6.40463 0 7.37639 0 8.57427C0 9.77345 0.992502 10.7433 2.21636 10.7433C2.73095 10.7433 3.20358 10.5728 3.58002 10.2852ZM20.5689 24.347V19.4248L22.3163 18.1819L24.0637 19.4248V24.347V29.1951V34.1144L22.3163 35.3569L20.5689 34.1144V29.1951V24.347ZM22.3163 15.6985L26.0292 18.3391V32.716L29.5256 30.2309V15.6985H32.236V28.3058L35.7721 25.7901L35.818 12.2404C26.8154 12.3617 17.8089 12.2688 8.81454 12.2688V25.7571L12.3103 28.2428V15.6985H15.0198V30.1682L18.5152 32.6561V18.4006L22.3163 15.6985ZM8.97517 0.642956C9.4891 0.642956 9.96172 0.813438 10.3378 1.1007H34.2944C34.6709 0.813438 35.1448 0.642956 35.6574 0.642956C36.8826 0.642956 37.8735 1.6144 37.8735 2.81195C37.8735 4.00983 36.8826 4.98128 35.6574 4.98128C35.1448 4.98128 34.6709 4.80918 34.2944 4.52321H10.3388C9.96238 4.80918 9.4891 4.98128 8.97517 4.98128C7.75065 4.98128 6.75815 4.00983 6.75815 2.81195C6.75815 1.6144 7.75065 0.642956 8.97517 0.642956Z" fill="#B02740"/>
+                  <path d="M55.7903 3.32236H63.1399V4.67485H60.1273V14.0808H58.7884V4.67485H55.7903V3.32236Z" fill="white"/>
+                  <path d="M72.0181 14.0808H70.5191L68.2342 9.96187H65.8329V14.0808H64.4794V3.32236H68.5544C69.4276 3.32236 70.1747 3.65024 70.7956 4.30599C71.4166 4.9515 71.727 5.73533 71.727 6.65748C71.727 7.35422 71.5281 7.98948 71.1303 8.56327C70.7228 9.1473 70.2183 9.55202 69.6168 9.77744L72.0181 14.0808ZM68.5544 4.65948H65.8329V8.67085H68.5544C69.0589 8.67085 69.4858 8.47618 69.8351 8.08682C70.1941 7.69747 70.3736 7.22102 70.3736 6.65748C70.3736 6.09394 70.1941 5.62262 69.8351 5.24351C69.4858 4.85416 69.0589 4.65948 68.5544 4.65948Z" fill="white"/>
+                  <path d="M81.5263 14.0808H80.0855L79.256 11.6679H74.6716L73.8421 14.0808H72.4013L76.1997 3.32236H77.7279L81.5263 14.0808ZM76.9565 5.02834L75.1373 10.3307H78.7903L76.9565 5.02834Z" fill="white"/>
+                  <path d="M89.0589 11.3451V3.32236H90.4124V14.0808H89.3209L84.0816 6.04271V14.0808H82.7281V3.32236H83.8197L89.0589 11.3451Z" fill="white"/>
+                  <path d="M95.7243 14.2806C94.7735 14.2806 93.9585 14.0501 93.2793 13.589C92.6099 13.1177 92.1393 12.4671 91.8676 11.6371L93.0319 10.9301C93.42 12.2314 94.3272 12.882 95.7534 12.882C96.4423 12.882 96.9711 12.7335 97.3398 12.4363C97.7182 12.1392 97.9074 11.7345 97.9074 11.2221C97.9074 10.7201 97.723 10.3359 97.3543 10.0695C97.0245 9.83379 96.4084 9.56227 95.506 9.25488L94.5309 8.91676C94.3175 8.82454 94.0361 8.69135 93.6868 8.51716C93.3473 8.33273 93.0998 8.1483 92.9446 7.96387C92.5177 7.47205 92.3043 6.87265 92.3043 6.16567C92.3043 5.22302 92.6147 4.4853 93.2357 3.9525C93.8566 3.3992 94.6134 3.12256 95.506 3.12256C96.3016 3.12256 97.0002 3.3326 97.6017 3.7527C98.2033 4.17279 98.6544 4.74657 98.9552 5.47405L97.82 6.16567C97.3834 5.05908 96.6121 4.50579 95.506 4.50579C94.953 4.50579 94.5067 4.64924 94.1671 4.93613C93.8275 5.22302 93.6577 5.61237 93.6577 6.10419C93.6577 6.57551 93.8178 6.93413 94.138 7.18004C94.4679 7.43619 95.0209 7.69234 95.7971 7.9485L96.3938 8.1483C96.7237 8.2815 96.9032 8.35322 96.9323 8.36347C97.2428 8.48642 97.5823 8.65548 97.951 8.87065C98.213 9.02435 98.475 9.26001 98.7369 9.57764C99.0765 9.93625 99.2463 10.4742 99.2463 11.1914C99.2463 12.1341 98.9213 12.8871 98.2712 13.4507C97.6114 14.004 96.7625 14.2806 95.7243 14.2806Z" fill="white"/>
+                  <path d="M108.843 14.0808H107.402L106.572 11.6679H101.988L101.158 14.0808H99.7176L103.516 3.32236H105.044L108.843 14.0808ZM104.273 5.02834L102.454 10.3307H106.107L104.273 5.02834Z" fill="white"/>
+                  <path d="M114.463 14.2806C112.911 14.2806 111.635 13.7427 110.635 12.6669C109.636 11.6013 109.136 10.2795 109.136 8.70159C109.136 7.12368 109.636 5.80193 110.635 4.73633C111.635 3.66048 112.911 3.12256 114.463 3.12256C115.385 3.12256 116.239 3.35822 117.024 3.82954C117.81 4.30087 118.422 4.93613 118.858 5.73533L117.679 6.45768C117.388 5.86341 116.952 5.39208 116.37 5.04371C115.797 4.6851 115.162 4.50579 114.463 4.50579C113.279 4.50579 112.319 4.90539 111.581 5.70459C110.844 6.49354 110.475 7.49255 110.475 8.70159C110.475 9.90039 110.844 10.8943 111.581 11.6832C112.319 12.4824 113.279 12.882 114.463 12.882C115.162 12.882 115.797 12.7078 116.37 12.3595C116.952 12.0009 117.388 11.5295 117.679 10.9455L118.858 11.6525C118.431 12.4517 117.825 13.0921 117.039 13.5736C116.263 14.045 115.404 14.2806 114.463 14.2806Z" fill="white"/>
+                  <path d="M119.448 3.32236H126.797V4.67485H123.785V14.0808H122.446V4.67485H119.448V3.32236Z" fill="white"/>
+                  <path d="M128.137 14.0808V3.32236H129.49V14.0808H128.137Z" fill="white"/>
+                  <path d="M131.137 8.70159C131.137 7.14418 131.647 5.82754 132.665 4.7517C133.684 3.6656 134.931 3.12256 136.406 3.12256C137.88 3.12256 139.127 3.6656 140.146 4.7517C141.174 5.82754 141.689 7.14418 141.689 8.70159C141.689 10.2488 141.174 11.5654 140.146 12.6515C139.127 13.7376 137.88 14.2806 136.406 14.2806C134.931 14.2806 133.684 13.7376 132.665 12.6515C131.647 11.5551 131.137 10.2385 131.137 8.70159ZM140.335 8.70159C140.335 7.51304 139.957 6.51916 139.2 5.71996C138.463 4.91051 137.531 4.50579 136.406 4.50579C135.29 4.50579 134.354 4.91051 133.597 5.71996C132.85 6.52941 132.476 7.52328 132.476 8.70159C132.476 9.86965 132.85 10.8635 133.597 11.6832C134.354 12.4824 135.29 12.882 136.406 12.882C137.531 12.882 138.463 12.4824 139.2 11.6832C139.957 10.8635 140.335 9.86965 140.335 8.70159Z" fill="white"/>
+                  <path d="M149.647 11.3451V3.32236H151V14.0808H149.909L144.669 6.04271V14.0808H143.316V3.32236H144.407L149.647 11.3451Z" fill="white"/>
+                  <path d="M61.1249 26.1047H66.2186V26.7502C66.2186 28.1539 65.7626 29.322 64.8506 30.2544C63.9386 31.1765 62.7306 31.6376 61.2268 31.6376C59.6744 31.6376 58.3888 31.0997 57.3701 30.0238C56.361 28.9275 55.8565 27.6057 55.8565 26.0586C55.8565 24.5114 56.361 23.1948 57.3701 22.1087C58.3888 21.0226 59.6647 20.4795 61.1977 20.4795C62.1291 20.4795 62.9926 20.7203 63.7882 21.2019C64.5935 21.6835 65.1999 22.3085 65.6074 23.0769L64.4431 23.7993C64.152 23.2153 63.7106 22.7491 63.1187 22.4007C62.5269 22.0421 61.8817 21.8628 61.1831 21.8628C60.0091 21.8628 59.0534 22.2675 58.3161 23.0769C57.569 23.8864 57.1954 24.8803 57.1954 26.0586C57.1954 27.2369 57.569 28.2308 58.3161 29.0402C59.0728 29.8394 60.0479 30.239 61.2413 30.239C62.2407 30.239 63.0557 29.9829 63.6863 29.4706C64.3267 28.948 64.7196 28.2564 64.8652 27.3957H61.1249V26.1047Z" fill="white"/>
+                  <path d="M67.6624 27.826V20.6793H69.0159V27.7646C69.0159 28.533 69.2293 29.1376 69.6562 29.5781C70.0928 30.0187 70.7041 30.239 71.49 30.239C72.2759 30.239 72.8823 30.0187 73.3092 29.5781C73.7458 29.1376 73.9641 28.533 73.9641 27.7646V20.6793H75.303V27.826C75.303 28.9941 74.9489 29.9214 74.2406 30.6079C73.5323 31.2944 72.6154 31.6376 71.49 31.6376C70.3548 31.6376 69.4331 31.2944 68.7248 30.6079C68.0165 29.9214 67.6624 28.9941 67.6624 27.826Z" fill="white"/>
+                  <path d="M85.2383 31.4378H83.7975L82.9679 29.0248H78.3836L77.554 31.4378H76.1132L79.9117 20.6793H81.4398L85.2383 31.4378ZM80.6685 22.3853L78.8493 27.6877H82.5022L80.6685 22.3853Z" fill="white"/>
+                  <path d="M93.9788 31.4378H92.4798L90.1949 27.3189H87.7936V31.4378H86.4401V20.6793H90.5151C91.3883 20.6793 92.1354 21.0072 92.7563 21.663C93.3773 22.3085 93.6877 23.0923 93.6877 24.0145C93.6877 24.7112 93.4888 25.3465 93.0911 25.9203C92.6836 26.5043 92.179 26.909 91.5775 27.1344L93.9788 31.4378ZM90.5151 22.0165H87.7936V26.0278H90.5151C91.0196 26.0278 91.4465 25.8332 91.7958 25.4438C92.1548 25.0545 92.3343 24.578 92.3343 24.0145C92.3343 23.4509 92.1548 22.9796 91.7958 22.6005C91.4465 22.2111 91.0196 22.0165 90.5151 22.0165Z" fill="white"/>
+                  <path d="M95.3371 20.6793H99.3102C100.688 20.6793 101.838 21.2019 102.759 22.247C103.681 23.2819 104.142 24.5524 104.142 26.0586C104.142 27.5545 103.681 28.8302 102.759 29.8855C101.838 30.9204 100.688 31.4378 99.3102 31.4378H95.3371V20.6793ZM96.6905 30.0853H99.3102C100.348 30.0853 101.197 29.7011 101.857 28.9326C102.517 28.1539 102.847 27.1959 102.847 26.0586C102.847 24.9213 102.517 23.9632 101.857 23.1845C101.197 22.4161 100.348 22.0318 99.3102 22.0318H96.6905V30.0853Z" fill="white"/>
+              </svg>
+          </a>
+      
+          <div class="burger js-show-menu">
+              <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 9.57617H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M1 1.80615H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M1 17.3459H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </div>
+      
+          <nav class="header__nav">
+              <div class="header__navTop">
+                  <svg class="js-hide-menu" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect y="14.1421" width="20" height="2" transform="rotate(-45 0 14.1421)" fill="white"/>
+                      <rect x="1.63672" y="0.221924" width="20" height="2" transform="rotate(45 1.63672 0.221924)" fill="white"/>
+                  </svg>
+              </div>
+              <ul class="header__navList">
+                  <li class="header__navItem">
+                      <a href="/testimonials.html">
+                          Testimonials
+                      </a>
+                  </li>
+                  <li class="header__navItem js-has-submenu">
+                      <span>
+                          Types of Scam
+                          <svg viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 1L5 5L9 1" stroke="currentColor"/>
+                          </svg>
+                      </span>
+                      <div class="header__navSubmenu">
+                          <svg viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M8 0L15.7942 13.5H0.205771L8 0Z" fill="currentColor"/>
+                          </svg>
+                          <ul class="header__navSublist">
+                              <li class="header__navSubitem">
+                                  <a href="/binary-options.html">
+                                      <span>Binary Options</span>
+                                  </a>
+                              </li>
+                              <li class="header__navSubitem">
+                                  <a href="/cryptocurrency.html">
+                                      <span>Cryptocurrency</span>
+                                  </a>
+                              </li>
+                              <li class="header__navSubitem">
+                                  <a href="/forex.html">
+                                      <span>Forex</span>
+                                  </a>
+                              </li>
+                              <li class="header__navSubitem">
+                                  <a href="/stock-trading.html">
+                                      <span>Stock Trading</span>
+                                  </a>
+                              </li>
+                              <li class="header__navSubitem">
+                                  <a href="/property-scam.html">
+                                      <span>Property Scam</span>
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+                  <li class="header__navItem">
+                      <a href="/about-us.html">
+                          About Us
+                      </a>
+                  </li>
+                  <li class="header__navItem">
+                      <a href="/contact-us.html">
+                          Contact Us
+                      </a>
+                  </li>
+                  <li class="header__navItem">
+                      <a href="/faq.html">
+                          FAQ
+                      </a>
+                  </li>
+              </ul>
+          </nav>
+      
+          <a href="/contact-us.html" class="button button--small">
+              Contact
+          </a>
+      </div></header>
+    
+    <div class="headTop">
+      <picture class="headTop__image">
+        <source media="(min-width: 1440px)"
+        srcset="/assets/images/hLg.png">
+        <source media="(min-width: 550px) and (max-width: 1439px)"
+        srcset="/assets/images/hMd.png">
+        <img
+        src="/assets/images/hSm.png">
+      </picture>
+    
+      <div class="container">
+        <div class="headTop__content headTop__content--w">
+          <h1 class="h1">
+            Get your money back from a scam
+          </h1>
+          
+          <div>
+            If you’ve been ripped off by scammers, get in touch and our team of experts will work to get your money back
+          </div>
+          <a href="/contact-us.html" class="button">
+            Get a free consultation
+          </a>
+        </div>
+      </div>
+    </div>
+    <section class="section pageInfo">
+      <div class="container js-sticky-contaier">
+        <div class="pageInfo__text">
+          <h2 class="h3" id="first">How Does Property Fraud Work?</h2>
+          <p>Property scams vary greatly in how they are executed, but they all aim to steal money from unsuspecting individuals who are interested in renting, buying, or leasing a property. In these types of scams, the fraudsters often pose as property owners, landlords, real estate agencies, property management companies, or other property-adjacent businesses to trick their victims into handing over money or sensitive financial and personal information that they can use to steal from them.</p>
+          <h2 class="h3">Key points</h2>
+          <ul>
+            <li>Don’t pay anything upfront to view a property or before you have a written and signed contract that is approved by a lawyer or an independent expert.</li>
+            <li>Don’t share any personal information, such as your social security number or bank account number, with anyone until you’re sure a deal is real.</li>
+            <li>Always view properties in person and make sure they match the listing you saw, both in appearance and description.</li>
+            <li>Do your own research to verify the authenticity of rental or property sale companies.</li>
+            <li>Don’t give in to high-pressure sales tactics, especially for refinancing your mortgage or paying for foreclosure relief services.</li>
+          </ul>
+          <h2 class="h3" id="second">Common Property Buying Scams</h2>
+          <h2 class="h3">Escrow Wire Fraud</h2>
+          <p>In escrow wire fraud scams, the fraudsters typically gain access to an email account associated with a real estate sale that’s currently in progress. They usually do this through some sort of phishing attack targeted at a real estate agent, a lender, a title agent, or a buyer. They then contact the buyer at the appropriate point in the sale process and pose as someone from the title or escrow company, asking the buyer to wire funds to a bank account. They then disappear with the wired funds.</p>
+          <h2 class="h3">Loan Flipping Scam</h2>
+          <p>Loan flipping scams involve ill-intentioned lenders convincing homeowners to repeatedly refinance their mortgage, borrowing more money each time. This results in the property owners eventually ending up with more loans than they can realistically afford to pay off, and the malicious lender earns more and more in fees and interest.</p>
+          <h2 class="h3">Foreclosure Relief Scam</h2>
+          <p>In foreclosure relief scams, the scammers target people who have homes in foreclosure by advertising foreclosure relief services or acquiring lists of properties in foreclosure. They promise to help the victims keep their homes for a fee, but never actually provide the foreclosure relief they promised.</p>
+          <h2 class="h3">Moving Scams</h2>
+          <p>Moving companies have also been known to commit fraud in a number of ways. For example, they may demand cash upfront and then never provide moving services or they might not give you a written estimate and then charge you much more than you agreed on for a move. Or, they might get you to sign a blank contract for the moving services and charge you an exorbitant sum after moving. Moving scammers have even been known to hold belongings hostage until you’ve paid them whatever they want.</p>
+          <h2 class="h3">Commercial Real Estate Scam</h2>
+          <p>Buying or renting a commercial property comes along with the risks of different types of commercial real estate scams. Scammers may pose as property owners and demand money upfront to see a property, then never appear to actually meet you in person. Or, they might show you a property that’s different from the one you saw online. Other commercial real estate scammers forge documents in order to obtain sensitive data from you that they can use to steal funds or your identity.</p>
+          <h2 class="h3">Home Inspection Scam</h2>
+          <p>Real estate scammers sometimes work with home inspectors to commit fraud. Fraudulent home inspectors will tell you everything is alright with a property in exchange for a fee from a scam real estate agency, so you end up paying way more than something is worth and are stuck with expensive repairs down the road. Alternatively, scammers might just pose as home inspectors and charge you for inspections, when they really have no idea what they are doing.</p>
+          <h2 class="h3">Title or Deed Scam</h2>
+          <p>In title and deed scams, the scammers attempt to illegitimately transfer the ownership of a property to someone else, without the real property owners knowing about it. They can do this by altering real deeds and titles with different names. They may then use the altered titles and deeds to sell the property to an unsuspecting buyer or to borrow money against your property.</p>
+          <h2 class="h3" id="third">Common Rental Property Scams</h2>
+          <h2 class="h3">Fake Property Listings</h2>
+          <p>Scammers often place fake property listings on rental sites, or copy existing listings from them, and use these to trick interested renters into giving them money as a deposit for a showing. Of course, they never show up to the property to give you a tour — if the property even exists at all.</p>
+          <h2 class="h3">Fake Letting Agents and Landlords</h2>
+          <p>Fake letting agents and landlords show potential renters around spoof properties, then ask them for a deposit or a month’s rent upfront. They then disappear with all the money before the victims realize that the individuals weren’t who they say they were and weren’t authorized to rent the property or receive payments for it.</p>
+          <h2 class="h3">Fake Overseas Landlords</h2>
+          <p>Scammers sometimes use the excuse that they are “overseas” as a reason to ask interested renters for holding deposits in order to not rent a property to someone else before the interested party views it. The properties usually don’t exist or the listings are clones of real listings that are instead operated by fraudsters.</p>
+          <h2 class="h3">Phishing Scams</h2>
+          <p>In property phishing scams, the fraudsters send out bulk emails pretending to be someone from a rental or letting agency. They ask the receivers to pay rent or other fees for their rentals through a fake online portal or by providing credit card details due to some type of fake issue that they invent.</p>
+          <h2 class="h3">Fake Printed Listings</h2>
+          <p>Though less common than online property rental listing scams, some printed listings you see in newspapers or flyers may also be fake. Scammers use these to lure in unsuspecting victims and try to get upfront payments from them to see or hold a property.</p>
+          <h2 class="h3" id="fourth">Property Scams Online</h2>
+          <h2 class="h3">Facebook Property Scams</h2>
+          <p>Fraudsters also use Facebook to place fake listings for properties for sale or rent. The scammers pose as landlords, real estate agents, or property owners and invent various reasons why they need upfront payments to show you a property.</p>
+          <h2 class="h3">Rental Property Scams On Craigslist</h2>
+          <p>Craigslist is another online property listing site where scams occur. The scammers use the same tactics as elsewhere, posting fake rental or for-sale listings and tricking victims into sending them deposits, holding fees, or other upfront payments.</p>
+          <h2 class="h3">Fake Property Scam Websites</h2>
+          <p>In more complex property site scams, the con artists will even go to the lengths of setting up a whole fake website for property listings. They may even clone the websites of legitimate listing companies, real estate agencies, property management companies, or rental agencies.</p>
+          <h2 class="h3" id="fifth">How To Spot Property Scams</h2>
+          <ul>
+            <li>The property itself looks like a scam. Any property you actually go view should look like it does in the pictures you saw online and match the listing description.</li>
+            <li>Lack of proper documentation. Scammers often create bogus documents designed to steal information from you or trick you into thinking a sale or rental is legit.</li>
+            <li>The property “owners” or “landlords” won’t meet you in person.</li>
+            <li>Movers won’t provide you with a written estimate and contract for moving services.</li>
+            <li>Foreclosure relief service companies contact you out of the blue.</li>
+            <li>Someone is using high-pressure sales tactics to ask you for money upfront, get you to refinance a mortgage, or get you to sign up for foreclosure release services.</li>
+            <li>You can’t verify whether a real estate company is real or not by looking them up online.</li>
+          </ul>
+          <h2 class="h3" id="sixth">Victim of a Property Scam?<br>Retrieve Your Money by Contacting Us Today</h2>
+          <p>If you’ve fallen victim to one of the many types of property scams out there, you might feel like all is lost — but it isn’t necessarily true. Fund recovery specialists, like ours at Payback LTD, have extensive experience retrieving stolen funds after various real estate and rental scams. For the highest probability of getting your money back, contact our team right away to start looking at the evidence and reviewing your case. We will do everything in our power to pressure the scammers into returning your money.</p>
+          <h2 class="h3" id="seven">How To Avoid Property Scams</h2>
+          <ul>
+            <li>Never pay anything upfront before you’ve seen a property and are sure the deal is legit. No one should ever charge you anything in order to show you a property you’re interested in renting or buying.</li>
+            <li>Have a lawyer or a real estate agent review all contracts for sales or rentals before you sign anything.</li>
+            <li>Be aware of current market values for renting and buying in your area. If something sounds too good to be true, it probably is.</li>
+            <li>Don’t give out personal details or financial information online or over the phone.</li>
+            <li>Don’t wire funds after being contacted by email or phone. If you’re in the process of buying a property, go to the office of the agency you’re working with and do it in person.</li>
+            <li>Do your research about property companies or individuals selling or renting properties. Google their names and check any reviews to make sure they are legit and have not already been flagged as scammers.</li>
+            <li>Always meet landlords or sellers and view a property in person before you commit to anything.</li>
+            <li>Hire your own property inspector before buying a property and make sure they are certified and have good reviews. If you can get a personal reference for one, that’s ideal.</li>
+            <li>Make sure to get a written estimate and have both parties sign a contract when you hire movers.</li>
+            <li>Don’t give in to pressure to refinance your mortgage and borrow more money when it’s not necessary.</li>
+          </ul>
+        </div>
+        <aside class="pageInfo__aside">
+          <div class="pageInfo__asideTitle">Table of Contents</div>
+          <a href="#first">How Does Property Fraud Work?</a>
+          <a href="#second">Common Property Buying Scams</a>
+          <a href="#third">Common Rental Property Scams</a>
+          <a href="#fourth">Property Scams Online</a>
+          <a href="#fifth">How To Spot Property Scams</a>
+          <a href="#sixth">Victim of a Property Scam? Retrieve Your Money by Contacting Us Today</a>
+          <a href="#seven">How To Avoid Property Scams</a>
+        </aside>
+      </div>
+    </section>
+    
+    <section class="section">
+      <div class="container">
+        <div class="dHead">
+          <h2 class="h2">Contact us now to get your money Back!</h2>
+          
+          <p>
+            If you’ve been ripped off by scammers, get in touch and our team of experts will work to get your money back
+          </p>
+        </div>
+    
+    
+        <form class="form">
+            <label class="form__group">
+              <input class="form__field js-form-name" id="form-name" type="text" placeholder="Your Name*" name="first_name">
+            </label>
+            <label class="form__group">
+              <input class="form__field js-form-sname" type="text" placeholder="Last Name*" name="last_name">
+            </label>
+            <label class="form__group">
+              <input class="form__field js-form-phone" type="tel" name="phone">
+            </label>
+            <label class="form__group">
+              <input class="form__field js-form-email" type="email" placeholder="Email*" name="email">
+            </label>
+            <textarea name="message" class="form__textarea" placeholder="Outline Your Case"></textarea>
+            <div class="form__button">
+              <button class="button">
+                Get a free consultation
+              </button>
+            </div>
+        
+            <div class="form_popup"></div>
+          </form>  </div>
+    </section>    <footer class="footer">
+      <div class="container">
+        <div class="footer__row">
+          <div class="footer__item">
+            <div class="footer__title">Sitelinks
+            </div>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/about-us.html">About Us</a></li>
+              <li><a href="/contact-us.html">Contact Us</a></li>
+              <li><a href="/faq">FAQ</a></li>
+            </ul>
+          </div>
+    
+          <div class="footer__item">
+            <div class="footer__title  ">Contact Us
+            </div>
+            <ul>
+              <li><a href="tel:#">IL 972-3309-5410</a></li>
+              <li><a href="tel:#">IL 972-3309-5410</a></li>
+              <li><a href="tel:#">IL 972-3309-5410</a></li>
+              <li><a href="tel:#">IL 972-3309-5410</a></li>
+            </ul>
+          </div>
+    
+          <div class="footer__item">
+            <div class="footer__title  ">Location
+            </div>
+            <p>
+              Hilazon 5, Ramat Gan, Israel, 5252269
+            </p>
+            <div class="footer__title">Our office hours
+            </div>
+            <p>Mon-Fr: 8:00-19:00 GMT<br>
+              Su: 8:00-14:00 GMT<br>
+              Sat: Closed</p>
+          </div>
+    
+          <div class="footer__item">
+            <div class="footer__title  ">Social
+            </div>
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+            </ul>
+            <div class="footer__rated">
+              Rated Excellent on
+              <svg width="152" height="37" viewBox="0 0 152 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_17_4876)">
+                <path d="M39.9456 13.1135H55.3361V15.9597H49.2846V31.9593H45.9569V15.9597H39.9322V13.1135H39.9456ZM54.6787 18.3137H57.5233V20.9471H57.577C57.6709 20.5747 57.8453 20.2156 58.1003 19.8698C58.3552 19.524 58.6638 19.1915 59.0261 18.9122C59.3884 18.6196 59.7909 18.3935 60.2337 18.2073C60.6765 18.0344 61.1328 17.9413 61.589 17.9413C61.9378 17.9413 62.1928 17.9546 62.327 17.9679C62.4611 17.9812 62.5953 18.0078 62.7429 18.0211V20.9205C62.5282 20.8806 62.3135 20.854 62.0854 20.8274C61.8573 20.8008 61.6426 20.7875 61.4279 20.7875C60.9181 20.7875 60.435 20.8939 59.9788 21.0934C59.5226 21.2929 59.1335 21.5988 58.798 21.9845C58.4626 22.3835 58.1942 22.8623 57.9929 23.4475C57.7917 24.0326 57.6977 24.6976 57.6977 25.4557V31.946H54.6652V18.3137H54.6787ZM76.6843 31.9593H73.7055V30.0575H73.6518C73.2761 30.749 72.726 31.2943 71.988 31.7066C71.25 32.1189 70.4986 32.3317 69.7337 32.3317C67.9223 32.3317 66.6073 31.8928 65.8022 31.0017C64.9972 30.1106 64.5946 28.7674 64.5946 26.9719V18.3137H67.6271V26.6793C67.6271 27.8763 67.8552 28.7275 68.3248 29.2196C68.7811 29.7117 69.4385 29.9644 70.2705 29.9644C70.9145 29.9644 71.4378 29.8713 71.8672 29.6718C72.2966 29.4723 72.6455 29.2196 72.9004 28.8871C73.1688 28.5679 73.3566 28.1689 73.4774 27.7167C73.5981 27.2645 73.6518 26.7724 73.6518 26.2404V18.327H76.6843V31.9593ZM81.8503 27.5837C81.9442 28.4615 82.2796 29.0733 82.8566 29.4324C83.447 29.7782 84.1448 29.9644 84.9633 29.9644C85.245 29.9644 85.5671 29.9378 85.9294 29.8979C86.2917 29.858 86.6405 29.7649 86.9491 29.6452C87.2712 29.5255 87.5261 29.3393 87.7408 29.0999C87.9421 28.8605 88.036 28.5546 88.0226 28.1689C88.0092 27.7832 87.8616 27.464 87.5932 27.2246C87.3248 26.9719 86.9894 26.7857 86.5734 26.6261C86.1575 26.4798 85.6878 26.3468 85.1511 26.2404C84.6144 26.134 84.0777 26.0143 83.5275 25.8946C82.964 25.7749 82.4138 25.6153 81.8905 25.4424C81.3672 25.2695 80.8976 25.0301 80.4816 24.7242C80.0657 24.4316 79.7302 24.0459 79.4887 23.5805C79.2337 23.115 79.113 22.5431 79.113 21.8515C79.113 21.1067 79.3008 20.4949 79.6631 19.9895C80.0254 19.4841 80.495 19.0851 81.0452 18.7792C81.6087 18.4733 82.226 18.2605 82.9103 18.1275C83.5946 18.0078 84.2521 17.9413 84.8693 17.9413C85.5805 17.9413 86.2648 18.0211 86.9089 18.1674C87.553 18.3137 88.1433 18.5531 88.6666 18.8989C89.19 19.2314 89.6193 19.6703 89.9682 20.2023C90.3171 20.7343 90.5318 21.386 90.6257 22.1441H87.459C87.3114 21.4259 86.9894 20.9338 86.4661 20.6944C85.9428 20.4417 85.339 20.322 84.6681 20.322C84.4534 20.322 84.1984 20.3353 83.9032 20.3752C83.608 20.4151 83.3397 20.4816 83.0713 20.5747C82.8164 20.6678 82.6017 20.8141 82.4138 21.0003C82.2394 21.1865 82.1455 21.4259 82.1455 21.7318C82.1455 22.1042 82.2796 22.3968 82.5346 22.6229C82.7895 22.849 83.125 23.0352 83.5409 23.1948C83.9569 23.3411 84.4265 23.4741 84.9633 23.5805C85.5 23.6869 86.0501 23.8066 86.6137 23.9262C87.1638 24.0459 87.7005 24.2055 88.2373 24.3784C88.774 24.5513 89.2436 24.7907 89.6596 25.0966C90.0756 25.4025 90.411 25.7749 90.6659 26.2271C90.9209 26.6793 91.0551 27.2512 91.0551 27.9162C91.0551 28.7275 90.8672 29.4058 90.4915 29.9777C90.1158 30.5362 89.6327 31.0017 89.0424 31.3475C88.452 31.6933 87.7811 31.9593 87.0565 32.1189C86.3319 32.2785 85.6073 32.3583 84.8962 32.3583C84.024 32.3583 83.2189 32.2652 82.4809 32.0657C81.7429 31.8662 81.0989 31.5736 80.5621 31.1879C80.0254 30.7889 79.596 30.2968 79.2874 29.7117C78.9788 29.1265 78.8178 28.4216 78.7909 27.6103H81.8503V27.5837ZM91.8601 18.3137H94.1546V14.2174H97.1871V18.3137H99.9244V20.5614H97.1871V27.8497C97.1871 28.1689 97.2005 28.4349 97.2274 28.6743C97.2542 28.9004 97.3213 29.0999 97.4152 29.2595C97.5092 29.4191 97.6568 29.5388 97.858 29.6186C98.0593 29.6984 98.3142 29.7383 98.6631 29.7383C98.8778 29.7383 99.0925 29.7383 99.3072 29.725C99.5219 29.7117 99.7366 29.6851 99.9513 29.6319V31.9593C99.6158 31.9992 99.2803 32.0258 98.9717 32.0657C98.6497 32.1056 98.3277 32.1189 97.9922 32.1189C97.1871 32.1189 96.5431 32.0391 96.06 31.8928C95.577 31.7465 95.1878 31.5204 94.9195 31.2278C94.6377 30.9352 94.4633 30.5761 94.3559 30.1372C94.262 29.6984 94.1949 29.193 94.1815 28.6344V20.588H91.887V18.3137H91.8601ZM102.071 18.3137H104.943V20.1624H104.996C105.426 19.3644 106.016 18.8058 106.781 18.46C107.546 18.1142 108.364 17.9413 109.263 17.9413C110.35 17.9413 111.29 18.1275 112.095 18.5132C112.9 18.8856 113.571 19.4043 114.107 20.0693C114.644 20.7343 115.033 21.5057 115.302 22.3835C115.57 23.2613 115.704 24.2055 115.704 25.203C115.704 26.1207 115.583 27.0118 115.342 27.863C115.1 28.7275 114.738 29.4856 114.255 30.1505C113.772 30.8155 113.155 31.3342 112.403 31.7332C111.652 32.1322 110.78 32.3317 109.76 32.3317C109.317 32.3317 108.874 32.2918 108.431 32.212C107.989 32.1322 107.559 31.9992 107.157 31.8263C106.754 31.6534 106.365 31.4273 106.03 31.148C105.681 30.8687 105.399 30.5495 105.157 30.1904H105.104V36.9999H102.071V18.3137ZM112.672 25.1498C112.672 24.538 112.591 23.9396 112.43 23.3544C112.269 22.7692 112.028 22.2638 111.705 21.8116C111.383 21.3594 110.981 21.0003 110.511 20.7343C110.028 20.4683 109.478 20.322 108.861 20.322C107.586 20.322 106.62 20.7609 105.976 21.6387C105.332 22.5165 105.01 23.6869 105.01 25.1498C105.01 25.8414 105.09 26.4798 105.265 27.065C105.439 27.6502 105.681 28.1556 106.03 28.5812C106.365 29.0068 106.768 29.3393 107.237 29.5787C107.707 29.8314 108.257 29.9511 108.874 29.9511C109.572 29.9511 110.149 29.8048 110.632 29.5255C111.115 29.2462 111.504 28.8738 111.813 28.4349C112.121 27.9827 112.35 27.4773 112.484 26.9054C112.604 26.3335 112.672 25.7483 112.672 25.1498ZM118.025 13.1135H121.058V15.9597H118.025V13.1135ZM118.025 18.3137H121.058V31.9593H118.025V18.3137ZM123.768 13.1135H126.801V31.9593H123.768V13.1135ZM136.1 32.3317C134.999 32.3317 134.02 32.1455 133.161 31.7864C132.302 31.4273 131.578 30.9219 130.974 30.2968C130.383 29.6585 129.927 28.9004 129.619 28.0226C129.31 27.1448 129.149 26.1739 129.149 25.1232C129.149 24.0858 129.31 23.1283 129.619 22.2505C129.927 21.3727 130.383 20.6146 130.974 19.9762C131.564 19.3378 132.302 18.8457 133.161 18.4866C134.02 18.1275 134.999 17.9413 136.1 17.9413C137.2 17.9413 138.179 18.1275 139.038 18.4866C139.897 18.8457 140.621 19.3511 141.225 19.9762C141.816 20.6146 142.272 21.3727 142.58 22.2505C142.889 23.1283 143.05 24.0858 143.05 25.1232C143.05 26.1739 142.889 27.1448 142.58 28.0226C142.272 28.9004 141.816 29.6585 141.225 30.2968C140.635 30.9352 139.897 31.4273 139.038 31.7864C138.179 32.1455 137.2 32.3317 136.1 32.3317ZM136.1 29.9511C136.77 29.9511 137.361 29.8048 137.857 29.5255C138.354 29.2462 138.756 28.8738 139.078 28.4216C139.4 27.9694 139.629 27.4507 139.79 26.8788C139.937 26.3069 140.018 25.7217 140.018 25.1232C140.018 24.538 139.937 23.9662 139.79 23.381C139.642 22.7958 139.4 22.2904 139.078 21.8382C138.756 21.386 138.354 21.0269 137.857 20.7476C137.361 20.4683 136.77 20.322 136.1 20.322C135.429 20.322 134.838 20.4683 134.342 20.7476C133.845 21.0269 133.443 21.3993 133.121 21.8382C132.799 22.2904 132.571 22.7958 132.41 23.381C132.262 23.9662 132.181 24.538 132.181 25.1232C132.181 25.7217 132.262 26.3069 132.41 26.8788C132.557 27.4507 132.799 27.9694 133.121 28.4216C133.443 28.8738 133.845 29.2462 134.342 29.5255C134.838 29.8181 135.429 29.9511 136.1 29.9511ZM143.936 18.3137H146.23V14.2174H149.263V18.3137H152V20.5614H149.263V27.8497C149.263 28.1689 149.276 28.4349 149.303 28.6743C149.33 28.9004 149.397 29.0999 149.491 29.2595C149.585 29.4191 149.732 29.5388 149.934 29.6186C150.135 29.6984 150.39 29.7383 150.739 29.7383C150.953 29.7383 151.168 29.7383 151.383 29.725C151.597 29.7117 151.812 29.6851 152.027 29.6319V31.9593C151.691 31.9992 151.356 32.0258 151.047 32.0657C150.725 32.1056 150.403 32.1189 150.068 32.1189C149.263 32.1189 148.619 32.0391 148.136 31.8928C147.653 31.7465 147.263 31.5204 146.995 31.2278C146.713 30.9352 146.539 30.5761 146.431 30.1372C146.338 29.6984 146.27 29.193 146.257 28.6344V20.588H143.963V18.3137H143.936Z" fill="white"/>
+                <path d="M36.4032 13.1136H22.5021L18.2083 0L13.9011 13.1136L0 13.1003L11.2578 21.2132L6.95056 34.3134L18.2083 26.2139L29.4527 34.3134L25.1589 21.2132L36.4032 13.1136Z" fill="white"/>
+                <path d="M26.125 24.179L25.1589 21.2131L18.2083 26.2139L26.125 24.179Z" fill="#E0E0E0"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_17_4876">
+                <rect width="152" height="37" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </div>
+    
+        <div class="footer__m">
+          <div class="footer__item">
+            <div class="footer__title  footer__mTitle">Sitelinks
+              <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L6.5 6.5L12 1" stroke="white"/>
+              </svg>
+            </div>
+            <div class="footer__mBody">
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about-us.html">About Us</a></li>
+                <li><a href="/contact-us.html">Contact Us</a></li>
+                <li><a href="/faq">FAQ</a></li>
+              </ul>
+            </div>
+          </div>
+    
+          <div class="footer__item">
+            <div class="footer__title  footer__mTitle">Contact Us
+              <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L6.5 6.5L12 1" stroke="white"/>
+              </svg>
+            </div>
+            <div class="footer__mBody">
+              <ul>
+                <li><a href="tel:#">IL 972-3309-5410</a></li>
+                <li><a href="tel:#">IL 972-3309-5410</a></li>
+                <li><a href="tel:#">IL 972-3309-5410</a></li>
+                <li><a href="tel:#">IL 972-3309-5410</a></li>
+              </ul>
+            </div>
+          </div>
+    
+          <div class="footer__item">
+            <div class="footer__title  footer__mTitle">Location
+              <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L6.5 6.5L12 1" stroke="white"/>
+              </svg>
+            </div>
+            <div class="footer__mBody">
+              <p>
+                Hilazon 5, Ramat Gan, Israel, 5252269
+              </p>
+            </div>
+          </div>
+          <div class="footer__item">
+            <div class="footer__title  footer__mTitle">Our office hours
+              <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L6.5 6.5L12 1" stroke="white"/>
+              </svg>
+            </div>
+            <div class="footer__mBody">
+              <p>Mon-Fr: 8:00-19:00 GMT<br>
+                Su: 8:00-14:00 GMT<br>
+                Sat: Closed</p>
+            </div>
+          </div>
+    
+          <div class="footer__item">
+            <div class="footer__title  footer__mTitle">Social
+              <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L6.5 6.5L12 1" stroke="white"/>
+              </svg>
+            </div>
+            <div class="footer__mBody">
+              <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+              </ul>
+            </div>
+          </div>
+    
+          <div class="footer__rated">
+            Rated Excellent on
+            <svg width="152" height="37" viewBox="0 0 152 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_17_4876)">
+              <path d="M39.9456 13.1135H55.3361V15.9597H49.2846V31.9593H45.9569V15.9597H39.9322V13.1135H39.9456ZM54.6787 18.3137H57.5233V20.9471H57.577C57.6709 20.5747 57.8453 20.2156 58.1003 19.8698C58.3552 19.524 58.6638 19.1915 59.0261 18.9122C59.3884 18.6196 59.7909 18.3935 60.2337 18.2073C60.6765 18.0344 61.1328 17.9413 61.589 17.9413C61.9378 17.9413 62.1928 17.9546 62.327 17.9679C62.4611 17.9812 62.5953 18.0078 62.7429 18.0211V20.9205C62.5282 20.8806 62.3135 20.854 62.0854 20.8274C61.8573 20.8008 61.6426 20.7875 61.4279 20.7875C60.9181 20.7875 60.435 20.8939 59.9788 21.0934C59.5226 21.2929 59.1335 21.5988 58.798 21.9845C58.4626 22.3835 58.1942 22.8623 57.9929 23.4475C57.7917 24.0326 57.6977 24.6976 57.6977 25.4557V31.946H54.6652V18.3137H54.6787ZM76.6843 31.9593H73.7055V30.0575H73.6518C73.2761 30.749 72.726 31.2943 71.988 31.7066C71.25 32.1189 70.4986 32.3317 69.7337 32.3317C67.9223 32.3317 66.6073 31.8928 65.8022 31.0017C64.9972 30.1106 64.5946 28.7674 64.5946 26.9719V18.3137H67.6271V26.6793C67.6271 27.8763 67.8552 28.7275 68.3248 29.2196C68.7811 29.7117 69.4385 29.9644 70.2705 29.9644C70.9145 29.9644 71.4378 29.8713 71.8672 29.6718C72.2966 29.4723 72.6455 29.2196 72.9004 28.8871C73.1688 28.5679 73.3566 28.1689 73.4774 27.7167C73.5981 27.2645 73.6518 26.7724 73.6518 26.2404V18.327H76.6843V31.9593ZM81.8503 27.5837C81.9442 28.4615 82.2796 29.0733 82.8566 29.4324C83.447 29.7782 84.1448 29.9644 84.9633 29.9644C85.245 29.9644 85.5671 29.9378 85.9294 29.8979C86.2917 29.858 86.6405 29.7649 86.9491 29.6452C87.2712 29.5255 87.5261 29.3393 87.7408 29.0999C87.9421 28.8605 88.036 28.5546 88.0226 28.1689C88.0092 27.7832 87.8616 27.464 87.5932 27.2246C87.3248 26.9719 86.9894 26.7857 86.5734 26.6261C86.1575 26.4798 85.6878 26.3468 85.1511 26.2404C84.6144 26.134 84.0777 26.0143 83.5275 25.8946C82.964 25.7749 82.4138 25.6153 81.8905 25.4424C81.3672 25.2695 80.8976 25.0301 80.4816 24.7242C80.0657 24.4316 79.7302 24.0459 79.4887 23.5805C79.2337 23.115 79.113 22.5431 79.113 21.8515C79.113 21.1067 79.3008 20.4949 79.6631 19.9895C80.0254 19.4841 80.495 19.0851 81.0452 18.7792C81.6087 18.4733 82.226 18.2605 82.9103 18.1275C83.5946 18.0078 84.2521 17.9413 84.8693 17.9413C85.5805 17.9413 86.2648 18.0211 86.9089 18.1674C87.553 18.3137 88.1433 18.5531 88.6666 18.8989C89.19 19.2314 89.6193 19.6703 89.9682 20.2023C90.3171 20.7343 90.5318 21.386 90.6257 22.1441H87.459C87.3114 21.4259 86.9894 20.9338 86.4661 20.6944C85.9428 20.4417 85.339 20.322 84.6681 20.322C84.4534 20.322 84.1984 20.3353 83.9032 20.3752C83.608 20.4151 83.3397 20.4816 83.0713 20.5747C82.8164 20.6678 82.6017 20.8141 82.4138 21.0003C82.2394 21.1865 82.1455 21.4259 82.1455 21.7318C82.1455 22.1042 82.2796 22.3968 82.5346 22.6229C82.7895 22.849 83.125 23.0352 83.5409 23.1948C83.9569 23.3411 84.4265 23.4741 84.9633 23.5805C85.5 23.6869 86.0501 23.8066 86.6137 23.9262C87.1638 24.0459 87.7005 24.2055 88.2373 24.3784C88.774 24.5513 89.2436 24.7907 89.6596 25.0966C90.0756 25.4025 90.411 25.7749 90.6659 26.2271C90.9209 26.6793 91.0551 27.2512 91.0551 27.9162C91.0551 28.7275 90.8672 29.4058 90.4915 29.9777C90.1158 30.5362 89.6327 31.0017 89.0424 31.3475C88.452 31.6933 87.7811 31.9593 87.0565 32.1189C86.3319 32.2785 85.6073 32.3583 84.8962 32.3583C84.024 32.3583 83.2189 32.2652 82.4809 32.0657C81.7429 31.8662 81.0989 31.5736 80.5621 31.1879C80.0254 30.7889 79.596 30.2968 79.2874 29.7117C78.9788 29.1265 78.8178 28.4216 78.7909 27.6103H81.8503V27.5837ZM91.8601 18.3137H94.1546V14.2174H97.1871V18.3137H99.9244V20.5614H97.1871V27.8497C97.1871 28.1689 97.2005 28.4349 97.2274 28.6743C97.2542 28.9004 97.3213 29.0999 97.4152 29.2595C97.5092 29.4191 97.6568 29.5388 97.858 29.6186C98.0593 29.6984 98.3142 29.7383 98.6631 29.7383C98.8778 29.7383 99.0925 29.7383 99.3072 29.725C99.5219 29.7117 99.7366 29.6851 99.9513 29.6319V31.9593C99.6158 31.9992 99.2803 32.0258 98.9717 32.0657C98.6497 32.1056 98.3277 32.1189 97.9922 32.1189C97.1871 32.1189 96.5431 32.0391 96.06 31.8928C95.577 31.7465 95.1878 31.5204 94.9195 31.2278C94.6377 30.9352 94.4633 30.5761 94.3559 30.1372C94.262 29.6984 94.1949 29.193 94.1815 28.6344V20.588H91.887V18.3137H91.8601ZM102.071 18.3137H104.943V20.1624H104.996C105.426 19.3644 106.016 18.8058 106.781 18.46C107.546 18.1142 108.364 17.9413 109.263 17.9413C110.35 17.9413 111.29 18.1275 112.095 18.5132C112.9 18.8856 113.571 19.4043 114.107 20.0693C114.644 20.7343 115.033 21.5057 115.302 22.3835C115.57 23.2613 115.704 24.2055 115.704 25.203C115.704 26.1207 115.583 27.0118 115.342 27.863C115.1 28.7275 114.738 29.4856 114.255 30.1505C113.772 30.8155 113.155 31.3342 112.403 31.7332C111.652 32.1322 110.78 32.3317 109.76 32.3317C109.317 32.3317 108.874 32.2918 108.431 32.212C107.989 32.1322 107.559 31.9992 107.157 31.8263C106.754 31.6534 106.365 31.4273 106.03 31.148C105.681 30.8687 105.399 30.5495 105.157 30.1904H105.104V36.9999H102.071V18.3137ZM112.672 25.1498C112.672 24.538 112.591 23.9396 112.43 23.3544C112.269 22.7692 112.028 22.2638 111.705 21.8116C111.383 21.3594 110.981 21.0003 110.511 20.7343C110.028 20.4683 109.478 20.322 108.861 20.322C107.586 20.322 106.62 20.7609 105.976 21.6387C105.332 22.5165 105.01 23.6869 105.01 25.1498C105.01 25.8414 105.09 26.4798 105.265 27.065C105.439 27.6502 105.681 28.1556 106.03 28.5812C106.365 29.0068 106.768 29.3393 107.237 29.5787C107.707 29.8314 108.257 29.9511 108.874 29.9511C109.572 29.9511 110.149 29.8048 110.632 29.5255C111.115 29.2462 111.504 28.8738 111.813 28.4349C112.121 27.9827 112.35 27.4773 112.484 26.9054C112.604 26.3335 112.672 25.7483 112.672 25.1498ZM118.025 13.1135H121.058V15.9597H118.025V13.1135ZM118.025 18.3137H121.058V31.9593H118.025V18.3137ZM123.768 13.1135H126.801V31.9593H123.768V13.1135ZM136.1 32.3317C134.999 32.3317 134.02 32.1455 133.161 31.7864C132.302 31.4273 131.578 30.9219 130.974 30.2968C130.383 29.6585 129.927 28.9004 129.619 28.0226C129.31 27.1448 129.149 26.1739 129.149 25.1232C129.149 24.0858 129.31 23.1283 129.619 22.2505C129.927 21.3727 130.383 20.6146 130.974 19.9762C131.564 19.3378 132.302 18.8457 133.161 18.4866C134.02 18.1275 134.999 17.9413 136.1 17.9413C137.2 17.9413 138.179 18.1275 139.038 18.4866C139.897 18.8457 140.621 19.3511 141.225 19.9762C141.816 20.6146 142.272 21.3727 142.58 22.2505C142.889 23.1283 143.05 24.0858 143.05 25.1232C143.05 26.1739 142.889 27.1448 142.58 28.0226C142.272 28.9004 141.816 29.6585 141.225 30.2968C140.635 30.9352 139.897 31.4273 139.038 31.7864C138.179 32.1455 137.2 32.3317 136.1 32.3317ZM136.1 29.9511C136.77 29.9511 137.361 29.8048 137.857 29.5255C138.354 29.2462 138.756 28.8738 139.078 28.4216C139.4 27.9694 139.629 27.4507 139.79 26.8788C139.937 26.3069 140.018 25.7217 140.018 25.1232C140.018 24.538 139.937 23.9662 139.79 23.381C139.642 22.7958 139.4 22.2904 139.078 21.8382C138.756 21.386 138.354 21.0269 137.857 20.7476C137.361 20.4683 136.77 20.322 136.1 20.322C135.429 20.322 134.838 20.4683 134.342 20.7476C133.845 21.0269 133.443 21.3993 133.121 21.8382C132.799 22.2904 132.571 22.7958 132.41 23.381C132.262 23.9662 132.181 24.538 132.181 25.1232C132.181 25.7217 132.262 26.3069 132.41 26.8788C132.557 27.4507 132.799 27.9694 133.121 28.4216C133.443 28.8738 133.845 29.2462 134.342 29.5255C134.838 29.8181 135.429 29.9511 136.1 29.9511ZM143.936 18.3137H146.23V14.2174H149.263V18.3137H152V20.5614H149.263V27.8497C149.263 28.1689 149.276 28.4349 149.303 28.6743C149.33 28.9004 149.397 29.0999 149.491 29.2595C149.585 29.4191 149.732 29.5388 149.934 29.6186C150.135 29.6984 150.39 29.7383 150.739 29.7383C150.953 29.7383 151.168 29.7383 151.383 29.725C151.597 29.7117 151.812 29.6851 152.027 29.6319V31.9593C151.691 31.9992 151.356 32.0258 151.047 32.0657C150.725 32.1056 150.403 32.1189 150.068 32.1189C149.263 32.1189 148.619 32.0391 148.136 31.8928C147.653 31.7465 147.263 31.5204 146.995 31.2278C146.713 30.9352 146.539 30.5761 146.431 30.1372C146.338 29.6984 146.27 29.193 146.257 28.6344V20.588H143.963V18.3137H143.936Z" fill="white"/>
+              <path d="M36.4032 13.1136H22.5021L18.2083 0L13.9011 13.1136L0 13.1003L11.2578 21.2132L6.95056 34.3134L18.2083 26.2139L29.4527 34.3134L25.1589 21.2132L36.4032 13.1136Z" fill="white"/>
+              <path d="M26.125 24.179L25.1589 21.2131L18.2083 26.2139L26.125 24.179Z" fill="#E0E0E0"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_17_4876">
+              <rect width="152" height="37" fill="white"/>
+              </clipPath>
+              </defs>
+            </svg>
+          </div>
+        </div>
+    
+        <div class="footer__under">
+          <a href="/terms.html">Terms & Conditions</a>
+          <a href="/policy.html">Privacy Policy</a>
+    
+          <div class="copyright">© Crypto Safeguard Ltd</div>
+        </div>
+      </div>
+    </footer>    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script defer src="../assets/js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,266 @@
+.header {
+
+  &:not(.header--transparent) {
+    background: #141413;
+  }
+
+  &--transparent {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 60px;
+
+    @include lg {
+      height: 109px;
+    }
+
+    @include md {
+      height: 72px;
+    }
+
+    @include sm {
+      height: 70px;
+    }
+  }
+
+  &__logo {
+    width: auto;
+    text-decoration: none;
+
+    @include lg {
+      height: 34px;
+    }
+
+    @include md {
+      height: 23px;
+    }
+
+    @include sm {
+      height: 23px;
+    }
+
+    svg {
+      width: auto;
+      height: 100%;
+    }
+  }
+
+  &__nav {
+    @include lg {
+
+      &Top {
+        display: none;
+      }
+
+      a {
+        display: block;
+      }
+  
+      ul {
+        margin: 0;
+        list-style: none;
+      }
+  
+      &List {
+        display: flex;
+        align-items: center;
+        gap: 49px;
+        padding: 0;
+      }
+  
+      &Item {
+        position: relative;
+  
+        > span {
+          display: flex;
+          align-items: center;
+          gap: 7px;
+          color: #FFFFFF;
+          @include link();
+  
+          svg {
+            width: 8px;
+          }
+        }
+  
+        > a {
+          color: #FFFFFF;
+          @include link();
+        }
+  
+        &:hover {
+  
+          .header__navSubmenu {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+    }
+
+      &Submenu {
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        z-index: 10;
+        transform: translateX(-50%);
+        padding-top: 16px;
+        opacity: 0;
+        visibility: hidden;
+        transition: 200ms ease-in-out;
+        max-height: auto !important;
+
+        svg {
+          position: absolute;
+          top: 16px;
+          left: 50%;
+          width: 16px;
+          height: 14px;
+          color: #141413;
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      &Sublist {
+        display: flex;
+        flex-direction: column;
+        gap: 19px;
+        padding: 18px 0 13px 0;
+        background: #141413;
+      }
+
+      &Subitem {
+        position: relative;
+
+        span {
+          @include link();
+        }
+
+        a {
+          position: relative;
+          padding: 0 14px;
+          color: #fff;
+          text-decoration: none;
+
+          &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 3px;
+            background: #F43930;
+            opacity: 0;
+            transition: 200ms ease-in-out;
+          }
+
+          &:hover {
+
+            &::before {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+
+    @media (max-width: 1439px) {
+      z-index: 10;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #141413;
+      transition: 200ms ease-in-out;
+      
+      &:not(.show) {
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      &Top {
+        padding: 21px 18px 17px 18px;
+        display: flex;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+        svg {
+          margin: 0 0 0 auto;
+          width: 16px;
+          height: 16px;
+        }
+      }
+
+      &List {
+        padding: 13px 0 3px 0;
+        margin: 0;
+
+        svg {
+          width: 8px;
+          height: auto;
+        }
+      }
+
+      a {
+        color: #FFFFFF;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0 16px;
+        padding: 0 32px;
+        margin: 0 0 18px 0;
+      }
+
+      &Submenu {
+        overflow: hidden;
+        max-height: 0;
+        transition: 200ms ease-in-out;
+
+        svg {
+          display: none;
+        }
+      }
+
+      &Sublist {
+        padding: 0;
+        margin: 0;
+        a {
+          padding-left: 57px;
+        }
+      }
+
+      &Item {
+
+        > span {
+          color: #FFFFFF;
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 0 16px;
+          padding: 0 32px;
+          margin: 0 0 18px 0;
+        }
+      }
+    }
+  }
+
+  .button {
+    @media (max-width: 1439px) {
+      display: none;
+    }
+  }
+
+  .burger {
+    @include lg {
+      display: none;
+    }
+  }
+}

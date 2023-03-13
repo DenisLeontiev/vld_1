@@ -1,0 +1,75 @@
+@import "home";
+@import "faq";
+@import "contacts";
+@import "about";
+
+.js-testimonials {
+
+  .swiper-wrapper {
+    @include lg {
+      height: 1476px;
+    }
+
+    @include md {
+      height: 1764px;
+    }
+
+    @include sm {
+      height: 2032px;
+    }
+  }
+
+  .swiper-slide {
+    @include lg {
+      height: calc(100% / 5 - 54px);
+    }
+
+    @include md {
+      height: calc(100% / 6 - 24px);
+    }
+
+    @include sm {
+      height: calc(100% / 10 - 24px);
+    }
+  }
+
+  .swiper__nav {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.js-tm-videos {
+
+  .swiper-wrapper {
+    @include lg {
+      height: 1146px;
+    }
+
+    @include md {
+      height: 1308px;
+    }
+
+    @include sm {
+      height: 1998px;
+    }
+  }
+
+  .swiper-slide {
+    @include lg {
+      height: calc(100% / 3 - 30px);
+    }
+
+    @include md {
+      height: calc(100% / 4 - 24px);
+    }
+
+    @include sm {
+      height: calc(100% / 6 - 24px);
+    }
+  }
+
+  .swiper__nav {
+    margin-top: 0;
+  }
+}
