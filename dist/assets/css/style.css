@@ -418,8 +418,28 @@ template {
     display: none;
 }
 
+@font-face {
+    font-family: "Gilroy-Regular";
+  src: url("/assets/fonts/Gilroy-Regular.woff");
+}
+
+@font-face {
+    font-family: "Gilroy-Medium";
+  src: url("/assets/fonts/Gilroy-Medium.woff");
+}
+
+@font-face {
+    font-family: "Gilroy-Bold";
+  src: url("/assets/fonts/Gilroy-Bold.woff");
+}
+
+@font-face {
+    font-family: "Gilroy-Black";
+  src: url("/assets/fonts/Gilroy-Black.woff");
+}
+
 html {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Gilroy-Regular", sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -825,6 +845,7 @@ body {
     background: #F43930;
     border: none;
     box-shadow: none;
+    border-radius: 8px;
     transition: 200ms ease-in-out;
     text-decoration: none;
     cursor: pointer;
@@ -2605,19 +2626,19 @@ body {
 
 @media (min-width: 1440px) {
     .header__logo {
-        height: 59px;
+        height: 34px;
     }
 }
 
 @media (min-width: 550px) and (max-width: 1439px) {
     .header__logo {
-        height: 40.8px;
+        height: 23px;
     }
 }
 
 @media (max-width: 549px) {
     .header__logo {
-        height: 40.8px;
+        height: 23px;
     }
 }
 
